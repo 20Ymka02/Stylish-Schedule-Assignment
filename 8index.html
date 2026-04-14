@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Daily Schedule</title>
+    
+    <style>
+        
+        body {
+            background-color: #fff0f5; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #4a4a4a;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+        }
+
+        h2 {
+            color: #d81b60;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #f06292;
+            padding-bottom: 10px;
+        }
+
+        
+        table {
+            width: 90%;
+            max-width: 800px;
+            border-collapse: separate;
+            border-spacing: 0;
+            background-color: #ffffff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(216, 27, 96, 0.1);
+            border: 2px solid #f06292;
+        }
+
+        
+        th, td {
+            padding: 15px;
+            border-bottom: 1px solid #fce4ec;
+            text-align: center;
+        }
+
+        
+        th {
+            background-color: #f06292;
+            color: white;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+        }
+
+        
+        .highlight-row {
+            background-color: #fce4ec;
+            font-weight: bold;
+            color: #c2185b;
+        }
+
+        
+        #time-column {
+            width: 120px;
+            color: #ad1457;
+            font-weight: 600;
+            background-color: #fff9fa;
+        }
+
+        
+        tr:hover {
+            background-color: #fdf2f8;
+            transition: 0.3s;
+        }
+
+        
+        tr:last-child td {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>My Busiest Day</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th id="time-column">Time</th>
+                <th>Activity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>06:30</td>
+                <td>Waking up and morning routine</td>
+            </tr>
+            <tr>
+                <td>08:00</td>
+                <td>Breakfast (avocado toast and tea)</td>
+            </tr>
+            <tr>
+                <td>09:00</td>
+                <td>First training</td>
+            </tr>
+            <tr>
+                <td>11:00</td>
+                <td>Homework</td>
+            </tr>
+            <tr class="highlight-row">
+                <td>13:00</td>
+                <td>Second training</td>
+            </tr>
+            <tr>
+                <td>16:00</td>
+                <td>Going home after training</td>
+            </tr>
+            <tr>
+                <td>17:00</td>
+                <td>Dinner</td>
+            </tr>
+            <tr>
+                <td>19:00</td>
+                <td>Last training</td>
+            </tr>
+            <tr>
+                <td>21:00</td>
+                <td>Shower</td>
+            </tr>
+            <tr style="color: #d81b60; font-weight: bold;">
+                <td>23:00</td>
+                <td>Sleep</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
